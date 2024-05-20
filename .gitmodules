@@ -1,0 +1,9 @@
+[submodule "hive-guard-mock-ESP32-streamer"]
+	path = hive-guard-mock-ESP32-streamer
+	url = git@github.com:FrancoBre/hive-guard-mock-ESP32-streamer.git
+[submodule "node.js-db-websocket"]
+	path = node.js-db-websocket
+	url = git@github.com:pablotrrs/node.js-db-websocket.git
+[submodule "hive-guard-ESP32-streamer"]
+	path = hive-guard-ESP32-streamer
+	url = git@github.com:FrancoBre/hive-guard-ESP32-streamer.git
