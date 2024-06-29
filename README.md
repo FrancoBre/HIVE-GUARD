@@ -28,7 +28,8 @@ The system is composed of three major components:
 
 1. *Streamer*: An ESP32CAM along with a DHT11 module attached to a hive for recording video, temperature, and humidity. Attach the streamer to your hive. It records video, temperature, and humidity, and streams this data to the master server over a local network.
 
-  ![8315e2ea-d09d-48ab-b864-f9a05019aae4](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/54b17f63-27fa-4fdc-b2a9-df200177ba22)
+  
+![explicacion-arq](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/0ca559d7-9a9d-422a-a7fd-98a013980be1)
 
   ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/c59538b6-df63-48e7-8906-e9ef734ab370)
 
