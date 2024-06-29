@@ -3,18 +3,23 @@
 
 ## Contents
 1. [Introduction](#introduction)
-2. [System Architecture](#system-Architecture)
-3. [How to Setup](#how-to-setup)
-4. [System Architecture](#system-architecture)
-5. [Troubleshooting](#troubleshooting)
-6. [Things Left to Do](#things-left-to-do)
-7. [Thanks](#thanks)
+2. [How to follow this docs](#how-to-follow-this-docs)
+3. [System Architecture](#system-architecture)
+4. [How to Setup](#how-to-setup)
+5. [System Architecture](#system-architecture)
+6. [Troubleshooting](#troubleshooting)
+7. [Things Left to Do](#things-left-to-do)
+8. [Thanks](#thanks)
 
 ## Introduction
 
 Are you a beekeeper? Do you struggle to keep control of your beehives and would like insights on what's going on, and possible actions to take, from your smartphone or laptop? Then our system is designed for you!
 
 HiveGuard aims to improve beekeeping by leveraging modern technology to give beekeepers an edge in managing and monitoring their hives. This includes real-time video streaming, environmental sensing, machine learning for bee behavior analysis, and instant alerts - all integrated into an easy-to-use platform.
+
+## How to follow this docs
+
+You will find a general overview of the system here, and linked you will find the software and documentation for every component. We recommend you read this docs first, and then read the docs for the [Master Server](https://github.com/pablotrrs/hive-guard-master-server/blob/main/README.md), then the docs for the [Streamer](https://github.com/FrancoBre/hive-guard-streamer/blob/main/README.md), and finally the docs for the [Frontend](https://github.com/EvolutionRX/hive-guard-client/blob/main/README.md).
 
 ## System Architecture
 
@@ -85,7 +90,8 @@ Batch data transmission from streamers to optimize bandwidth usage and avoid con
 
 We would like to express our deep gratitude to:
 
-- *[Fabian Hickert](https://github.com/BeeAlarmed/BeeAlarmed)*: For his outstanding work on the machine learning neural network, which is crucial for detecting bees and identifying illnesses.
+- *Jorge Seniw and his family*: For letting us try the system, and helping us out with beekeeping related questions and issues. You can find him in this instagram account: [La miel de papá](https://www.instagram.com/lamiel.depapa?igsh=MWZzeG85d3R0cXhpMQ==)
+- *[Fabian Hickert](https://github.com/BeeAlarmed/BeeAlarmed)*: For his outstanding work on the machine learning neural network, which we used for detecting bees and identifying illnesses.
 - *[Nomadic Geek](https://www.youtube.com/@nomadicgeek_369)*: For his foundational [surveillance system](https://www.youtube.com/watch?v=WsPFQx0p4Us&list=PLFRIWPt6uUoVsirzwwqrNtp5vG-4ByIoe) that inspired our project.
 - *Prof. Alexis Tcach*: For his guidance and support throughout the development of HiveGuard.
 
