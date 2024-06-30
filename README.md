@@ -5,11 +5,15 @@
 1. [Introduction](#introduction)
 2. [How to follow this docs](#how-to-follow-this-docs)
 3. [System Architecture](#system-architecture)
-4. [How to Setup](#how-to-setup)
-5. [System Architecture](#system-architecture)
-6. [Troubleshooting](#troubleshooting)
-7. [Things Left to Do](#things-left-to-do)
-8. [Thanks](#thanks)
+4. [Detailed flow](#detailed-flow)
+   1. [Streamer - Master Server connection](#streamer-master-server-connection)
+   2. [Master Server register and frontend setup](#master-server-register-and-frontend-setup)
+   3. [Frontend Hive Data querying](#frontend-hive-data-querying)
+   4. [Alerts Polling](#alerts-polling)
+6. [How to Setup](#how-to-setup)
+7. [Troubleshooting](#troubleshooting)
+8. [Things Left to Do](#things-left-to-do)
+9. [Thanks](#thanks)
 
 ## Introduction
 
@@ -41,6 +45,45 @@ The system is composed of three major components:
 ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/e4c0e126-a4ec-473e-b31e-4c9815d33901)
 ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/abf80eae-534e-4f19-9a32-d41a7557da89)
 
+## Detailed Flow
+
+### Streamer - Master Server connection
+This sequence diagram describes the initial connection and configuration process of the system. It starts with the beekeeper initiating the master server and ends with the streamer transmitting data to the master server.
+
+![streamer-master-connection](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/e34a7e6a-8deb-4baa-a534-f314910a78d2)
+
+The streamer sends the following data from itself to the master server:
+
+ - `id`: Unique identifier for the ESP32 camera.
+ - `wsPort`: WebSocket port.
+ - `appPort`: Application port.
+ - `display`: Display name for the camera.
+ - `ip`: IP address of the streamer.
+
+The ws and app (HTTP server) ports are generated dynamically, checking via a HTTP request if they're occupied or not. The UDP port is `12345` always and that's why it isn't sent. 
+
+### Master Server register and frontend setup
+This sequence diagram details how the beekeeper enters the master server's public URL in the frontend and how the initial parameters are configured and verified.
+
+![frontend-config](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/51e39e56-e37f-4570-b203-e6a87e64a239)
+
+### Frontend Hive Data querying
+This sequence diagram shows how the beekeeper queries updated hive data and how the frontend generates charts with temperature and humidity data.
+
+![frontend-views](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/5e7e06f7-c75a-40bf-b4e6-0031d430e531)
+
+### Alerts Polling
+This sequence diagram details how the frontend polls for alerts and how the master server sends email alerts to the beekeeper.
+
+![frontend-alerts](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/8ca7aff5-66d9-47f1-9067-e9f4a480ea7d)
+
+
+The following alerts can be generated:
+
+ - Humidity exceeds the threshold.
+ - Temperature exceeds the threshold.
+ - Temperature falls below the threshold.
+
 ## How to Set Up
 
 ### Prerequisites
@@ -55,6 +98,7 @@ To try the system on your hives:
 3. *Save master server public URL*: The server's webpage (localhost:8000/client) displays bee images, temperature, humidity data, and both local and public IP addresses. Save the master server public URL.
 4. *Frontend Connection*: A live version is available at this [link](https://hive-guard-client-production.up.railway.app/). If unavailable, follow the local setup instructions in the documentation. Enter the master server's public URL in the frontend. The frontend performs a health check and establishes a connection to display hive data. Then it will ask you for config params such as thresholds for the alerts.
 
+You can also find a video on how to set up the sytem in this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
 ## Troubleshooting
 
