@@ -66,6 +66,25 @@ This sequence diagram details how the beekeeper enters the master server's publi
 
 ![frontend-config](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/51e39e56-e37f-4570-b203-e6a87e64a239)
 
+The frontend sends the following threshold and email parameters configuration:
+
+```json
+{
+  "TEMP_MIN_THRESHOLD": 20,
+  "TEMP_MAX_THRESHOLD": 60,
+  "HUM_THRESHOLD": 80,
+  "EMAIL_USER": "test",
+  "EMAIL_PASS": "test",
+  "EMAIL_RECIPIENT": "test"
+}
+```
+
+ - `EMAIL_RECIPIENT`: The beekeeper's email entered in the frontend, where emails will be sent.
+ - `EMAIL_USER`: The email address from which emails will be sent.
+ - `EMAIL_PASS`: The API key (e.g., Gmail) for that email address.
+
+You can get a Gmail API key by following [this documentation](https://cloud.google.com/docs/authentication/api-keys).
+
 ### Frontend Hive Data querying
 This sequence diagram shows how the beekeeper queries updated hive data and how the frontend generates charts with temperature and humidity data.
 
@@ -75,7 +94,6 @@ This sequence diagram shows how the beekeeper queries updated hive data and how 
 This sequence diagram details how the frontend polls for alerts and how the master server sends email alerts to the beekeeper.
 
 ![frontend-alerts](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/8ca7aff5-66d9-47f1-9067-e9f4a480ea7d)
-
 
 The following alerts can be generated:
 
