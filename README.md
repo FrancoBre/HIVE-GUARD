@@ -90,7 +90,7 @@ The following alerts can be generated:
 - **Hardware**: ESP32-CAM modules for streamers, DHT11 sensors for temperature and humidity, a computer or Raspberry Pi for the master server.
 - **Software**: All software and detailed setup instructions are available as open source. You can find the Git projects as submodules of this repository.
 
-You can try the system using the mocks available in the master server to showcase some functionalities before deploying it to your hives.
+You can try the system using the [mocks available in the master server](https://github.com/pablotrrs/hive-guard-master-server#Mock-Versions) to showcase some functionalities before deploying it to your hives.
 
 To try the system on your hives:
 1. *Initialize Master Server*: Start the master server first.
