@@ -37,9 +37,10 @@ The system is composed of three major components:
   ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/c59538b6-df63-48e7-8906-e9ef734ab370)
 
 2. *Master Server*: A central server that processes data from the streamer. The master server uses machine learning to detect and analyze bee behaviors such as entering/leaving the hive and identifying ill bees. This server is intended to be run in a computer on the field where the hives are in, or in a raspberry pi. Its results are sent to the frontend.
+
 ![ezgif-1-4c515cab20](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/28130051-8dc3-4bdf-b987-1b47bde92535)
 
-4. *Frontend*: A user interface that displays processed data and insights. The frontend generates charts and summaries, helping you make informed decisions such as when to place a pollen trap or identify potential hive issues. Alerts are sent to your email and displayed on the frontend.
+3. *Frontend*: A user interface that displays processed data and insights. The frontend generates charts and summaries, helping you make informed decisions such as when to place a pollen trap or identify potential hive issues. Alerts are sent to your email and displayed on the frontend.
 
 ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/e4c0e126-a4ec-473e-b31e-4c9815d33901)
 ![image](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/abf80eae-534e-4f19-9a32-d41a7557da89)
@@ -115,7 +116,7 @@ To try the system on your hives:
 3. *Save master server public URL*: The server's webpage (localhost:8000/client) displays bee images, temperature, humidity data, and both local and public IP addresses. Save the master server public URL.
 4. *Frontend Connection*: A live version is available at this [link](https://hive-guard-client-production.up.railway.app/). If unavailable, follow the local setup instructions in the documentation. Enter the master server's public URL in the frontend. The frontend performs a health check and establishes a connection to display hive data. Then it will ask you for config params such as thresholds for the alerts.
 
-You can also find a video on how to set up the sytem in this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+You can also find a video on how to set up the sytem [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
 ## Troubleshooting
 
