@@ -1,5 +1,4 @@
-
-![intro](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/d76aec63-93d8-4d70-b18a-39bf4591a06b)
+![logo](./assets/cortina.gif)
 
 ## Contents
 1. [Introduction](#introduction)
