@@ -144,7 +144,7 @@ This is problematic because the re-connection takes time, during which we might 
 
 So, we thought of adding an extra ESP8266 device to the ESP32-CAM to use its additional pins. We could also attach an infrared movement sensor to record actual bee movement and save battery.
 
-You can find more information about this in the "Things Left to Do" section in the master server and streamer projects.
+You can find more information about this in the "Things Left to Do" section in the [master server](https://github.com/pablotrrs/hive-guard-master-server#What-is-left-to-do) and [streamer projects](https://github.com/FrancoBre/hive-guard-streamer#Battery).
    
 ### Network Optimization
 Batch data transmission from streamers to optimize bandwidth usage and avoid congestion.
