@@ -116,7 +116,7 @@ To try the system on your hives:
 3. *Save master server public URL*: The server's webpage (localhost:8000/client) displays bee images, temperature, humidity data, and both local and public IP addresses. Save the master server public URL.
 4. *Frontend Connection*: A live version is available at this [link](https://hive-guard-client-production.up.railway.app/). If unavailable, follow the local setup instructions in the documentation. Enter the master server's public URL in the frontend. The frontend performs a health check and establishes a connection to display hive data. Then it will ask you for config params such as thresholds for the alerts.
 
-You can also find a video on how to set up the sytem [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+You can also find a video on how to set up the sytem [here](https://youtu.be/CMT_JoFqt6s).
 
 ## Troubleshooting
 
