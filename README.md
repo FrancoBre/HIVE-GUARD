@@ -134,7 +134,7 @@ Here are our next steps:
 
 We are not beekepers, and the beekeper who is helping us is not a programmer, so this system needs further testing under real life scenarios. If you're a beekeper and a programmer, any feedback and contributions would be invaluable!
 
-![OIG2](https://github.com/FrancoBre/HIVE-GUARD/assets/66085255/9e78d34d-51f0-4847-9b2c-79475ac54fd3)
+![OIG2](https://github.com/user-attachments/assets/543cfc81-115c-4f3d-8ca9-b4833b44404c)
 
 ### Battery
 We developed a version that allows battery-powered streamers and battery level monitoring from the streamers. The battery level is displayed by the master server on its webpage and also in the frontend. We even created alerts for when the battery level exceeds a threshold, similar to how we handle humidity and temperature alerts, both via email and live alerts in the frontend!
